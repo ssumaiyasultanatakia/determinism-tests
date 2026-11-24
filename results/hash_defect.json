@@ -1,0 +1,112 @@
+{
+  "n_interpreters": 8,
+  "keys": {
+    "('audio_babble', 2, 0)": {
+      "old_distinct_seeds": 8,
+      "new_distinct_seeds": 1,
+      "old_example": [
+        2622608575,
+        2284437122,
+        4061278751
+      ],
+      "new_value": 1572630494
+    },
+    "('ecg_emg', 3, 0)": {
+      "old_distinct_seeds": 8,
+      "new_distinct_seeds": 1,
+      "old_example": [
+        3952122933,
+        1729847435,
+        2904234775
+      ],
+      "new_value": 1137745877
+    },
+    "('powerline', 1, 7)": {
+      "old_distinct_seeds": 8,
+      "new_distinct_seeds": 1,
+      "old_example": [
+        3354406607,
+        1550154928,
+        2779216081
+      ],
+      "new_value": 2550739971
+    },
+    "('drift', 4, 3)": {
+      "old_distinct_seeds": 8,
+      "new_distinct_seeds": 1,
+      "old_example": [
+        2285955041,
+        2018790349,
+        279926720
+      ],
+      "new_value": 1934767590
+    }
+  },
+  "old_is_stable": false,
+  "new_is_stable": true,
+  "n_families": 11,
+  "n_rng_dependent": 4,
+  "median_relative_L2_rng_dependent": 0.371,
+  "realisation_divergence": {
+    "ecg/baseline_wander": {
+      "severity": 2,
+      "relative_L2": 0.6368,
+      "corr": 0.8136,
+      "rng_dependent": true
+    },
+    "ecg/mains_50": {
+      "severity": 2,
+      "relative_L2": 0.1362,
+      "corr": 0.9907,
+      "rng_dependent": true
+    },
+    "ecg/mains_60": {
+      "severity": 2,
+      "relative_L2": 0.2193,
+      "corr": 0.9759,
+      "rng_dependent": true
+    },
+    "ecg/emg": {
+      "severity": 2,
+      "relative_L2": 0.5228,
+      "corr": 0.8626,
+      "rng_dependent": true
+    },
+    "ecg/electrode_motion": {
+      "error": "ValueError('not enough values to unpack (expected 3, got 2)')"
+    },
+    "ecg/electrode_dropout": {
+      "error": "ValueError('not enough values to unpack (expected 3, got 2)')"
+    },
+    "ecg/low_gain": {
+      "severity": 2,
+      "relative_L2": 0.0,
+      "corr": 1.0,
+      "rng_dependent": false
+    },
+    "ecg/adc_bits": {
+      "severity": 2,
+      "relative_L2": 0.0,
+      "corr": 1.0,
+      "rng_dependent": false
+    },
+    "ecg/bandwidth": {
+      "severity": 2,
+      "relative_L2": 0.0,
+      "corr": 1.0,
+      "rng_dependent": false
+    },
+    "ecg/polarity": {
+      "severity": 2,
+      "relative_L2": 0.0,
+      "corr": 1.0,
+      "rng_dependent": false
+    },
+    "ecg/rate_mismatch": {
+      "severity": 2,
+      "relative_L2": 0.0,
+      "corr": 1.0,
+      "rng_dependent": false
+    }
+  }
+}

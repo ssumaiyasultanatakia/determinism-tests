@@ -1,0 +1,156 @@
+{
+  "n_cells": 33,
+  "n_divergent": 18,
+  "frac_divergent": 0.545,
+  "families_affected": [
+    "baseline_wander",
+    "electrode_dropout",
+    "electrode_motion",
+    "emg",
+    "mains_50",
+    "mains_60"
+  ],
+  "median_relative_L2_divergent": 0.2771,
+  "max_relative_L2": 0.7852,
+  "n_segments": 256,
+  "split": [
+    128,
+    128
+  ],
+  "seed": 0,
+  "per_cell": {
+    "baseline_wander|1": {
+      "relative_L2": 0.242541,
+      "identical": false
+    },
+    "baseline_wander|2": {
+      "relative_L2": 0.545191,
+      "identical": false
+    },
+    "baseline_wander|3": {
+      "relative_L2": 0.785173,
+      "identical": false
+    },
+    "mains_50|1": {
+      "relative_L2": 0.033228,
+      "identical": false
+    },
+    "mains_50|2": {
+      "relative_L2": 0.143947,
+      "identical": false
+    },
+    "mains_50|3": {
+      "relative_L2": 0.379028,
+      "identical": false
+    },
+    "mains_60|1": {
+      "relative_L2": 0.036437,
+      "identical": false
+    },
+    "mains_60|2": {
+      "relative_L2": 0.130359,
+      "identical": false
+    },
+    "mains_60|3": {
+      "relative_L2": 0.434763,
+      "identical": false
+    },
+    "emg|1": {
+      "relative_L2": 0.175231,
+      "identical": false
+    },
+    "emg|2": {
+      "relative_L2": 0.370181,
+      "identical": false
+    },
+    "emg|3": {
+      "relative_L2": 0.621726,
+      "identical": false
+    },
+    "electrode_motion|1": {
+      "relative_L2": 0.141334,
+      "identical": false
+    },
+    "electrode_motion|2": {
+      "relative_L2": 0.219891,
+      "identical": false
+    },
+    "electrode_motion|3": {
+      "relative_L2": 0.320652,
+      "identical": false
+    },
+    "electrode_dropout|1": {
+      "relative_L2": 0.153901,
+      "identical": false
+    },
+    "electrode_dropout|2": {
+      "relative_L2": 0.311751,
+      "identical": false
+    },
+    "electrode_dropout|3": {
+      "relative_L2": 0.471442,
+      "identical": false
+    },
+    "low_gain|1": {
+      "relative_L2": 0.0,
+      "identical": true
+    },
+    "low_gain|2": {
+      "relative_L2": 0.0,
+      "identical": true
+    },
+    "low_gain|3": {
+      "relative_L2": 0.0,
+      "identical": true
+    },
+    "adc_bits|1": {
+      "relative_L2": 0.0,
+      "identical": true
+    },
+    "adc_bits|2": {
+      "relative_L2": 0.0,
+      "identical": true
+    },
+    "adc_bits|3": {
+      "relative_L2": 0.0,
+      "identical": true
+    },
+    "bandwidth|1": {
+      "relative_L2": 0.0,
+      "identical": true
+    },
+    "bandwidth|2": {
+      "relative_L2": 0.0,
+      "identical": true
+    },
+    "bandwidth|3": {
+      "relative_L2": 0.0,
+      "identical": true
+    },
+    "polarity|1": {
+      "relative_L2": 0.0,
+      "identical": true
+    },
+    "polarity|2": {
+      "relative_L2": 0.0,
+      "identical": true
+    },
+    "polarity|3": {
+      "relative_L2": 0.0,
+      "identical": true
+    },
+    "rate_mismatch|1": {
+      "relative_L2": 0.0,
+      "identical": true
+    },
+    "rate_mismatch|2": {
+      "relative_L2": 0.0,
+      "identical": true
+    },
+    "rate_mismatch|3": {
+      "relative_L2": 0.0,
+      "identical": true
+    }
+  },
+  "reading": "Corrupting 256 segments in one call and in two halves, with the corrected seed derivation and an identical nominal seed, gives different data in 18 of 33 cells (55%), across 6 families, at a median relative L2 of 0.277 among the affected cells. The API gives a caller no reason to suspect this and every reason to batch."
+}

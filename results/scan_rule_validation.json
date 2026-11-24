@@ -1,0 +1,48 @@
+{
+ "cases": {
+  "canonical_defect_one_line": {
+   "detected": true,
+   "rule_should_detect": true,
+   "outcome": "true positive"
+  },
+  "split_two_lines": {
+   "detected": true,
+   "rule_should_detect": true,
+   "outcome": "true positive"
+  },
+  "split_three_lines": {
+   "detected": true,
+   "rule_should_detect": true,
+   "outcome": "true positive"
+  },
+  "split_five_lines": {
+   "detected": false,
+   "rule_should_detect": false,
+   "outcome": "true negative"
+  },
+  "across_function_boundary": {
+   "detected": true,
+   "rule_should_detect": false,
+   "outcome": "detected (outside stated window)"
+  },
+  "torch_manual_seed": {
+   "detected": true,
+   "rule_should_detect": true,
+   "outcome": "true positive"
+  },
+  "correct_blake2b_no_hit": {
+   "detected": false,
+   "rule_should_detect": false,
+   "outcome": "true negative"
+  }
+ },
+ "sensitivity_within_window": "4/4",
+ "known_false_negative_modes": [],
+ "environment": {
+  "python": "3.9.13",
+  "site_packages_roots": [
+   "<local path>"
+  ],
+  "distributions_installed": 183
+ }
+}

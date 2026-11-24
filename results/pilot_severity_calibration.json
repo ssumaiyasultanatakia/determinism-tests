@@ -1,0 +1,278 @@
+{
+  "per_family": {
+    "audio/ambient_white": {
+      "distortion_by_severity": {
+        "1": 0.1,
+        "2": 0.3162,
+        "3": 1.0
+      },
+      "monotone_increasing": true,
+      "range": 0.9
+    },
+    "audio/ward_rumble": {
+      "distortion_by_severity": {
+        "1": 0.1778,
+        "2": 0.5012,
+        "3": 1.0
+      },
+      "monotone_increasing": true,
+      "range": 0.8222
+    },
+    "audio/babble": {
+      "distortion_by_severity": {
+        "1": 0.1778,
+        "2": 0.3981,
+        "3": 0.7943
+      },
+      "monotone_increasing": true,
+      "range": 0.6165
+    },
+    "audio/cheap_stethoscope": {
+      "distortion_by_severity": {
+        "1": 0.3938,
+        "2": 0.6808,
+        "3": 0.8298
+      },
+      "monotone_increasing": true,
+      "range": 0.436
+    },
+    "audio/low_gain": {
+      "distortion_by_severity": {
+        "1": 0.7488,
+        "2": 0.9369,
+        "3": 0.98
+      },
+      "monotone_increasing": true,
+      "range": 0.2312
+    },
+    "audio/clipping": {
+      "distortion_by_severity": {
+        "1": 0.4888,
+        "2": 0.421,
+        "3": 0.4202
+      },
+      "monotone_increasing": false,
+      "range": 0.0686
+    },
+    "audio/telehealth_codec": {
+      "distortion_by_severity": {
+        "1": 0.452,
+        "2": 0.4896,
+        "3": 0.5621
+      },
+      "monotone_increasing": true,
+      "range": 0.1101
+    },
+    "audio/adc_bits": {
+      "distortion_by_severity": {
+        "1": 0.0025,
+        "2": 0.0101,
+        "3": 0.04
+      },
+      "monotone_increasing": true,
+      "range": 0.0375
+    },
+    "audio/packet_loss": {
+      "error": "ValueError('not enough values to unpack (expected 3, got 2)')"
+    },
+    "audio/rate_mismatch": {
+      "distortion_by_severity": {
+        "1": 0.6654,
+        "2": 0.8189,
+        "3": 0.8771
+      },
+      "monotone_increasing": true,
+      "range": 0.2117
+    },
+    "ecg/baseline_wander": {
+      "distortion_by_severity": {
+        "1": 0.2759,
+        "2": 0.5759,
+        "3": 1.592
+      },
+      "monotone_increasing": true,
+      "range": 1.3161
+    },
+    "ecg/mains_50": {
+      "distortion_by_severity": {
+        "1": 0.0369,
+        "2": 0.1475,
+        "3": 0.4431
+      },
+      "monotone_increasing": true,
+      "range": 0.4062
+    },
+    "ecg/mains_60": {
+      "distortion_by_severity": {
+        "1": 0.0369,
+        "2": 0.1477,
+        "3": 0.4428
+      },
+      "monotone_increasing": true,
+      "range": 0.4059
+    },
+    "ecg/emg": {
+      "distortion_by_severity": {
+        "1": 0.1778,
+        "2": 0.3981,
+        "3": 0.7943
+      },
+      "monotone_increasing": true,
+      "range": 0.6165
+    },
+    "ecg/electrode_motion": {
+      "error": "ValueError('not enough values to unpack (expected 3, got 2)')"
+    },
+    "ecg/electrode_dropout": {
+      "error": "ValueError('not enough values to unpack (expected 3, got 2)')"
+    },
+    "ecg/low_gain": {
+      "distortion_by_severity": {
+        "1": 0.5,
+        "2": 0.8,
+        "3": 0.94
+      },
+      "monotone_increasing": true,
+      "range": 0.44
+    },
+    "ecg/adc_bits": {
+      "distortion_by_severity": {
+        "1": 0.0021,
+        "2": 0.0085,
+        "3": 0.0344
+      },
+      "monotone_increasing": true,
+      "range": 0.0323
+    },
+    "ecg/bandwidth": {
+      "distortion_by_severity": {
+        "1": 0.9014,
+        "2": 0.9167,
+        "3": 0.9335
+      },
+      "monotone_increasing": true,
+      "range": 0.0321
+    },
+    "ecg/polarity": {
+      "distortion_by_severity": {
+        "1": 0.0,
+        "2": 2.0,
+        "3": 1.4051
+      },
+      "monotone_increasing": false,
+      "range": 2.0
+    },
+    "ecg/rate_mismatch": {
+      "distortion_by_severity": {
+        "1": 0.6834,
+        "2": 0.8299,
+        "3": 0.8883
+      },
+      "monotone_increasing": true,
+      "range": 0.2049
+    },
+    "eeg/mains": {
+      "distortion_by_severity": {
+        "1": 0.0369,
+        "2": 0.1476,
+        "3": 0.4429
+      },
+      "monotone_increasing": true,
+      "range": 0.406
+    },
+    "eeg/emg": {
+      "distortion_by_severity": {
+        "1": 0.2512,
+        "2": 0.5012,
+        "3": 1.0
+      },
+      "monotone_increasing": true,
+      "range": 0.7488
+    },
+    "eeg/ocular": {
+      "error": "ValueError('not enough values to unpack (expected 3, got 2)')"
+    },
+    "eeg/electrode_pop": {
+      "error": "ValueError('not enough values to unpack (expected 3, got 2)')"
+    },
+    "eeg/channel_loss": {
+      "error": "ValueError('not enough values to unpack (expected 3, got 2)')"
+    },
+    "eeg/amplitude_drift": {
+      "distortion_by_severity": {
+        "1": 0.1311,
+        "2": 0.3418,
+        "3": 0.5961
+      },
+      "monotone_increasing": true,
+      "range": 0.465
+    },
+    "eeg/bandwidth": {
+      "distortion_by_severity": {
+        "1": 0.7355,
+        "2": 0.8077,
+        "3": 0.8725
+      },
+      "monotone_increasing": true,
+      "range": 0.137
+    },
+    "eeg/white": {
+      "distortion_by_severity": {
+        "1": 0.1778,
+        "2": 0.3981,
+        "3": 0.7943
+      },
+      "monotone_increasing": true,
+      "range": 0.6165
+    },
+    "eeg/low_gain": {
+      "distortion_by_severity": {
+        "1": 0.5,
+        "2": 0.8,
+        "3": 0.94
+      },
+      "monotone_increasing": true,
+      "range": 0.44
+    },
+    "eeg/rate_mismatch": {
+      "distortion_by_severity": {
+        "1": 0.6683,
+        "2": 0.8177,
+        "3": 0.8834
+      },
+      "monotone_increasing": true,
+      "range": 0.2151
+    }
+  },
+  "fs": {
+    "audio": 4000.0,
+    "ecg": 1000.0,
+    "eeg": 256.0
+  },
+  "probe": "broadband gaussian + 1.2 Hz component, 4096 samples",
+  "n_families_measured": 25,
+  "n_monotone": 23,
+  "non_monotone": [
+    "audio/clipping",
+    "ecg/polarity"
+  ],
+  "cross_family_spread": {
+    "1": {
+      "median": 0.2512,
+      "min": 0.0,
+      "max": 0.9014
+    },
+    "2": {
+      "median": 0.5012,
+      "min": 0.0085,
+      "max": 2.0
+    },
+    "3": {
+      "median": 0.8725,
+      "min": 0.0344,
+      "max": 1.592
+    }
+  },
+  "PASS": true,
+  "verdict": "severity behaves as a scale in 23/25 families; report as an axis"
+}

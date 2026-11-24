@@ -1,0 +1,365 @@
+{
+  "setup": {
+    "dataset": "apnea",
+    "suite": "ecg",
+    "n_train": 6000,
+    "n_test": 2500,
+    "n_models": 8,
+    "models": [
+      "logreg_C1",
+      "logreg_C005",
+      "lda",
+      "rf200",
+      "histgb",
+      "gaussnb",
+      "knn25",
+      "mlp64"
+    ],
+    "n_cells": 33,
+    "salts": [
+      11,
+      22,
+      33,
+      44,
+      55,
+      66
+    ],
+    "note": "models trained once on clean data and reused for both sessions, so no ranking change can come from training stochasticity"
+  },
+  "per_cell": {
+    "baseline_wander|1": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "baseline_wander|2": {
+      "rng_dependent": true,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "baseline_wander|3": {
+      "rng_dependent": true,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "mains_50|1": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "mains_50|2": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "mains_50|3": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "mains_60|1": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "mains_60|2": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "mains_60|3": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "emg|1": {
+      "rng_dependent": true,
+      "mean_rank_rho": 0.987,
+      "winner_change_rate": 0.533,
+      "median_auc_swing": 0.0062,
+      "max_auc_swing": 0.0141,
+      "median_top1_margin": 0.0016,
+      "swing_exceeds_margin_rate": 1.0
+    },
+    "emg|2": {
+      "rng_dependent": true,
+      "mean_rank_rho": 0.992,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0107,
+      "max_auc_swing": 0.0147,
+      "median_top1_margin": 0.0236,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "emg|3": {
+      "rng_dependent": true,
+      "mean_rank_rho": 0.987,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0114,
+      "max_auc_swing": 0.0202,
+      "median_top1_margin": 0.0344,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "electrode_motion|1": {
+      "rng_dependent": true,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0036,
+      "max_auc_swing": 0.0068,
+      "median_top1_margin": 0.0179,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "electrode_motion|2": {
+      "rng_dependent": true,
+      "mean_rank_rho": 0.986,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0054,
+      "max_auc_swing": 0.0103,
+      "median_top1_margin": 0.0118,
+      "swing_exceeds_margin_rate": 0.133
+    },
+    "electrode_motion|3": {
+      "rng_dependent": true,
+      "mean_rank_rho": 0.902,
+      "winner_change_rate": 0.333,
+      "median_auc_swing": 0.0048,
+      "max_auc_swing": 0.0079,
+      "median_top1_margin": 0.0028,
+      "swing_exceeds_margin_rate": 0.667
+    },
+    "electrode_dropout|1": {
+      "rng_dependent": true,
+      "mean_rank_rho": 0.973,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0043,
+      "max_auc_swing": 0.0083,
+      "median_top1_margin": 0.022,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "electrode_dropout|2": {
+      "rng_dependent": true,
+      "mean_rank_rho": 0.979,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0073,
+      "max_auc_swing": 0.0145,
+      "median_top1_margin": 0.0209,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "electrode_dropout|3": {
+      "rng_dependent": true,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0071,
+      "max_auc_swing": 0.0124,
+      "median_top1_margin": 0.002,
+      "swing_exceeds_margin_rate": 1.0
+    },
+    "low_gain|1": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0016,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "low_gain|2": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0016,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "low_gain|3": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0024,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "adc_bits|1": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "adc_bits|2": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0252,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "adc_bits|3": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0106,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "bandwidth|1": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "bandwidth|2": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0064,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "bandwidth|3": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0454,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "polarity|1": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "polarity|2": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "polarity|3": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "rate_mismatch|1": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0174,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "rate_mismatch|2": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0168,
+      "swing_exceeds_margin_rate": 0.0
+    },
+    "rate_mismatch|3": {
+      "rng_dependent": false,
+      "mean_rank_rho": 1.0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0954,
+      "swing_exceeds_margin_rate": 0.0
+    }
+  },
+  "n_session_pairs": 15,
+  "summary": {
+    "all_cells": {
+      "n_cells": 33,
+      "winner_change_rate": 0.026,
+      "cells_with_any_winner_change": 2,
+      "median_rank_rho": 1.0,
+      "min_rank_rho": 0.902,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0202,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.085
+    },
+    "rng_dependent_cells": {
+      "n_cells": 11,
+      "winner_change_rate": 0.079,
+      "cells_with_any_winner_change": 2,
+      "median_rank_rho": 0.987,
+      "min_rank_rho": 0.902,
+      "median_auc_swing": 0.0054,
+      "max_auc_swing": 0.0202,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.255
+    },
+    "deterministic_cells": {
+      "n_cells": 22,
+      "winner_change_rate": 0.0,
+      "cells_with_any_winner_change": 0,
+      "median_rank_rho": 1.0,
+      "min_rank_rho": 1.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.0
+    }
+  },
+  "reading": "Of 33 corruption cells, 11 are RNG-dependent and 22 are pure filters that never touch the generator; the second group is bit-identical across sessions (winner change rate 0.000) and is reported separately rather than averaged in, because including it dilutes the effect by construction. On the 11 RNG-dependent cells, scored with identical models and identical nominal seeds over 15 session pairs, the AUROC swing between sessions has median 0.0054 against a median winner margin of 0.0191. The winner changes at rate 0.079, and the swing exceeds the margin at rate 0.255. The ranking is therefore mostly stable: the defect corrupts the data in every affected cell, but only displaces the reported winner in the minority of cells where the top two methods are separated by less than the session noise. That minority is the part of a leaderboard a reader cannot trust."
+}

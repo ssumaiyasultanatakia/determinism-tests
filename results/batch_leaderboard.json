@@ -1,0 +1,279 @@
+{
+  "setup": {
+    "dataset": "apnea",
+    "suite": "ecg",
+    "n_test": 2500,
+    "split": [
+      1250,
+      1250
+    ],
+    "n_models": 8,
+    "note": "models trained once on clean data; only the batching of the corruption differs"
+  },
+  "per_cell": {
+    "baseline_wander|1": {
+      "batch_sensitive": true,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0191,
+      "rank_rho": 1.0
+    },
+    "baseline_wander|2": {
+      "batch_sensitive": true,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0191,
+      "rank_rho": 1.0
+    },
+    "baseline_wander|3": {
+      "batch_sensitive": true,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0191,
+      "rank_rho": 1.0
+    },
+    "mains_50|1": {
+      "batch_sensitive": true,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0191,
+      "rank_rho": 1.0
+    },
+    "mains_50|2": {
+      "batch_sensitive": true,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0191,
+      "rank_rho": 1.0
+    },
+    "mains_50|3": {
+      "batch_sensitive": true,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0191,
+      "rank_rho": 1.0
+    },
+    "mains_60|1": {
+      "batch_sensitive": true,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0191,
+      "rank_rho": 1.0
+    },
+    "mains_60|2": {
+      "batch_sensitive": true,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0191,
+      "rank_rho": 1.0
+    },
+    "mains_60|3": {
+      "batch_sensitive": true,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0191,
+      "rank_rho": 1.0
+    },
+    "emg|1": {
+      "batch_sensitive": true,
+      "winner_changed": true,
+      "auc_swing": 0.0037,
+      "top1_margin": 0.0002,
+      "rank_rho": 0.952
+    },
+    "emg|2": {
+      "batch_sensitive": true,
+      "winner_changed": false,
+      "auc_swing": 0.0125,
+      "top1_margin": 0.0181,
+      "rank_rho": 0.976
+    },
+    "emg|3": {
+      "batch_sensitive": true,
+      "winner_changed": false,
+      "auc_swing": 0.0087,
+      "top1_margin": 0.0308,
+      "rank_rho": 0.929
+    },
+    "electrode_motion|1": {
+      "batch_sensitive": true,
+      "winner_changed": false,
+      "auc_swing": 0.0019,
+      "top1_margin": 0.016,
+      "rank_rho": 1.0
+    },
+    "electrode_motion|2": {
+      "batch_sensitive": true,
+      "winner_changed": false,
+      "auc_swing": 0.0047,
+      "top1_margin": 0.0063,
+      "rank_rho": 0.929
+    },
+    "electrode_motion|3": {
+      "batch_sensitive": true,
+      "winner_changed": false,
+      "auc_swing": 0.0044,
+      "top1_margin": 0.002,
+      "rank_rho": 0.929
+    },
+    "electrode_dropout|1": {
+      "batch_sensitive": true,
+      "winner_changed": false,
+      "auc_swing": 0.0049,
+      "top1_margin": 0.0192,
+      "rank_rho": 1.0
+    },
+    "electrode_dropout|2": {
+      "batch_sensitive": true,
+      "winner_changed": false,
+      "auc_swing": 0.0039,
+      "top1_margin": 0.021,
+      "rank_rho": 0.976
+    },
+    "electrode_dropout|3": {
+      "batch_sensitive": true,
+      "winner_changed": false,
+      "auc_swing": 0.0077,
+      "top1_margin": 0.0021,
+      "rank_rho": 0.976
+    },
+    "low_gain|1": {
+      "batch_sensitive": false,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0016,
+      "rank_rho": 1.0
+    },
+    "low_gain|2": {
+      "batch_sensitive": false,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0016,
+      "rank_rho": 1.0
+    },
+    "low_gain|3": {
+      "batch_sensitive": false,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0024,
+      "rank_rho": 1.0
+    },
+    "adc_bits|1": {
+      "batch_sensitive": false,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0191,
+      "rank_rho": 1.0
+    },
+    "adc_bits|2": {
+      "batch_sensitive": false,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0252,
+      "rank_rho": 1.0
+    },
+    "adc_bits|3": {
+      "batch_sensitive": false,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0106,
+      "rank_rho": 1.0
+    },
+    "bandwidth|1": {
+      "batch_sensitive": false,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0,
+      "rank_rho": 1.0
+    },
+    "bandwidth|2": {
+      "batch_sensitive": false,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0064,
+      "rank_rho": 1.0
+    },
+    "bandwidth|3": {
+      "batch_sensitive": false,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0454,
+      "rank_rho": 1.0
+    },
+    "polarity|1": {
+      "batch_sensitive": false,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0191,
+      "rank_rho": 1.0
+    },
+    "polarity|2": {
+      "batch_sensitive": false,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0191,
+      "rank_rho": 1.0
+    },
+    "polarity|3": {
+      "batch_sensitive": false,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0191,
+      "rank_rho": 1.0
+    },
+    "rate_mismatch|1": {
+      "batch_sensitive": false,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0174,
+      "rank_rho": 1.0
+    },
+    "rate_mismatch|2": {
+      "batch_sensitive": false,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0168,
+      "rank_rho": 1.0
+    },
+    "rate_mismatch|3": {
+      "batch_sensitive": false,
+      "winner_changed": false,
+      "auc_swing": 0.0,
+      "top1_margin": 0.0954,
+      "rank_rho": 1.0
+    }
+  },
+  "summary": {
+    "all_cells": {
+      "n_cells": 33,
+      "winner_changed_cells": 1,
+      "winner_change_rate": 0.03,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0125,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.091,
+      "median_rank_rho": 1.0
+    },
+    "batch_sensitive_cells": {
+      "n_cells": 18,
+      "winner_changed_cells": 1,
+      "winner_change_rate": 0.056,
+      "median_auc_swing": 0.0009,
+      "max_auc_swing": 0.0125,
+      "median_top1_margin": 0.0191,
+      "swing_exceeds_margin_rate": 0.167,
+      "median_rank_rho": 1.0
+    },
+    "batch_stable_cells": {
+      "n_cells": 15,
+      "winner_changed_cells": 0,
+      "winner_change_rate": 0.0,
+      "median_auc_swing": 0.0,
+      "max_auc_swing": 0.0,
+      "median_top1_margin": 0.0174,
+      "swing_exceeds_margin_rate": 0.0,
+      "median_rank_rho": 1.0
+    }
+  },
+  "reading": "Across 33 cells, 18 are batch-sensitive and 15 are not. On the batch-sensitive cells the reported winner changes in 1 (rate 0.056) and the swing exceeds the winner's margin at rate 0.167, median rank correlation 1.000; the batch-stable cells move by exactly zero. Chunking the input therefore perturbs a leaderboard by the same mechanism a re-seeded interpreter does."
+}

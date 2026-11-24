@@ -1,0 +1,35 @@
+{
+  "libraries": {
+    "roots": [
+      "<local path>"
+    ],
+    "files_scanned": 13405,
+    "units_with_pattern": 0,
+    "hits_total": 0,
+    "by_unit": {},
+    "examples": []
+  },
+  "research_repositories": {
+    "roots": [
+      "<local path>",
+      "<local path>",
+      "<local path>"
+    ],
+    "files_scanned": 24,
+    "units_with_pattern": 0,
+    "hits_total": 0,
+    "by_unit": {},
+    "examples": [],
+    "n_repositories": 3
+  },
+  "confirmed_instances": 1,
+  "reading": "Absence in installed libraries establishes that this is not an ecosystem-wide library pattern. It does NOT estimate frequency in research code, which is the population the paper argues is at risk; the research sample here is far too small for that. One instance is confirmed: our own, reported in this paper.",
+  "roots": [
+    "<local path>"
+  ],
+  "files_scanned": 13405,
+  "packages_with_pattern": 0,
+  "hits_total": 0,
+  "by_package": {},
+  "examples": []
+}

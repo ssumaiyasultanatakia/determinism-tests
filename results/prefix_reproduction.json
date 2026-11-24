@@ -1,0 +1,15 @@
+{
+  "prefix": {
+    "cells": 75,
+    "within_process_mismatches": 0,
+    "across_process_mismatches": 34,
+    "across_process_rate": 0.4533
+  },
+  "fixed": {
+    "cells": 75,
+    "within_process_mismatches": 0,
+    "across_process_mismatches": 0,
+    "across_process_rate": 0.0
+  },
+  "interpretation": "A within-process determinism test returns zero mismatches under the defective derivation, so it cannot detect the defect that makes the benchmark irreproducible across sessions."
+}

@@ -1,0 +1,47 @@
+{
+  "seeding": {
+    "n_cells": 11,
+    "pairs_per_cell": 15,
+    "winner_change_rate": {
+      "mean": 0.079,
+      "ci95": [
+        0.0,
+        0.194
+      ]
+    },
+    "swing_exceeds_margin": {
+      "mean": 0.255,
+      "ci95": [
+        0.024,
+        0.515
+      ]
+    },
+    "swing_exceeds_margin_family_level": {
+      "n_families": 4,
+      "ci95": [
+        0.111,
+        0.333
+      ]
+    }
+  },
+  "batching": {
+    "n_cells": 18,
+    "comparisons_per_cell": 1,
+    "winner_change_rate": {
+      "mean": 0.056,
+      "ci95": [
+        0.0,
+        0.167
+      ]
+    },
+    "swing_exceeds_margin": {
+      "mean": 0.167,
+      "ci95": [
+        0.0,
+        0.333
+      ]
+    }
+  },
+  "n_boot": 20000,
+  "method": "cluster (cell-level) percentile bootstrap"
+}
